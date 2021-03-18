@@ -17,7 +17,7 @@ class CreatePostsTable extends Migration
             $table->id();
             $table->string('name',45);
             $table->string('slug',45);
-            $table->string('extract',45);
+            $table->text('extract',250);
             $table->text('body');
             $table->enum('estatus',[1, 2])->default(1);
 
